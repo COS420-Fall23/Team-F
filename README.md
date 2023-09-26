@@ -25,9 +25,10 @@ UMaine has a dedicated counseling center webpage that provides information regar
 
 # Communication Policy
 
-All written communication should be Discord. Zoom will be used for regular meetings with additional meetings having the option to be made in-person. 
+- All written communication should be Discord. Zoom will be used for regular meetings with additional meetings having the option to be made in-person. 
 
-If a question is asked during a meeting, the person whose work most closely relates to it should respond. If no one responds the PM should do so, potentially assigning someone to respond. 
+- If a question is asked during a meeting, the person whose work most closely relates to it should respond. If no one responds the PM should do so, potentially assigning someone to respond. 
 
-If a question is asked in Discord it should be answered as quickly as possible, always within 24 hours. 
+- If a question is asked in Discord it should be answered as quickly as possible, always within 24 hours. 
 
+- Communication should either tag individuals or no one for most messages. Tagging the whole team may sometimes be appropriate. 
