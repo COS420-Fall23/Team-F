@@ -1,6 +1,7 @@
 # Webapp link
 https://cos420-fall23.github.io/Team-F/src/index.html
-
+# Screenshots of App Running
+https://docs.google.com/document/d/1XqUsCc6BKcDNJoHsyaiNQoK9yYxTd4dr7PKCGHzAMaM/edit
 # Team Fantastic Six
 
 Problem Area: Designing and having hope for your future in a changing word
