@@ -12,7 +12,7 @@ PM: Zachary Hamilton
 
 Designers: Aayush Manandhar, Sam Porter, Mikey Wilard
 
-Developers: Logan L Geiser, Shashank Chintakuntla, Luke Tompkins
+Developers: Logan L Geiser, Shashank Reddy Chintakuntla, Luke Tompkins
 
 # Problem Statement
 
