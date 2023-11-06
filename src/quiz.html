@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quiz Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .quiz-container {
+            margin: 0 auto;
+            max-width: 600px;
+        }
+
+        .question {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .question-header {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .options label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .submit-button {
+            padding: 10px 20px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .submit-button:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-body">
+        <h1>Self-Assessment Quiz</h1>
+   <!--Quiz question format gotten from ChatGPT (Temporary, subject to change)-->
+        <form id="quiz-form">            
+            <div class="question">
+                <div class="question-header"><!--Question goes here--></div>
+                <div class="options">
+                    <input type="radio" id = "placeholder" name="question1" value="placeholder">
+                    <label for="placeholder">placeholder</label>
+
+                    <input type="radio" id = "placeholder" name="question1" value="placeholder">
+                    <label for="placeholder">placeholder</label>
+                    
+                    <input type="radio" id = "placeholder" name="question1" value="placeholder">
+                    <label for="placeholder">placeholder</label>
+
+                    <input type="radio" id = "placeholder" name="question1" value="placeholder">
+                    <label for="placeholder">placeholder</label>
+                </div>
+            </div>
+            
+            <div class="question">
+                <div class="question-header"><!--Question goes here--></div>
+                <div class="options">
+                    <input type="radio" id = "placeholder" name="question2" value="placeholder">
+                    <label for="placeholder">placeholder</label>
+
+                    <input type="radio" id = "placeholder" name="question2" value="placeholder">
+                    <label for="placeholder">placeholder</label>
+
+                    <input type="radio" id = "placeholder" name="question2" value="placeholder">
+                    <label for="placeholder">placeholder</label>
+
+                    <input type="radio" id = "placeholder" name="question2" value="placeholder">
+                    <label for="placeholder">placeholder</label>
+                </div>
+            </div>
+
+
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        // Handle quiz submission
+        document.getElementById('quiz-form').onsubmit = function(event) {
+            event.preventDefault();
+
+            // Need to implement grading system
+
+            alert("Quiz submitted!");
+        };
+    </script>
+</body>
+</html>
+</body>
