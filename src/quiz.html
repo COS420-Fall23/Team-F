@@ -85,7 +85,22 @@
                     <label for="placeholder">placeholder</label>
                 </div>
             </div>
+            <div class="question">
+                <div class="question-header">How often do you exercise in a week?</div>
+                <div class="options">
+                <input type="radio" id="exercise-never" name="question3" value="Never">
+                <label for="exercise-never">Never</label>
 
+                <input type="radio" id="exercise-sometimes" name="question3" value="Sometimes">
+                <label for="exercise-sometimes">Sometimes</label>
+        
+                <input type="radio" id="exercise-often" name="question3" value="Often">
+                <label for="exercise-often">Often</label>
+
+                <input type="radio" id="exercise-always" name="question3" value="Always">
+                <label for="exercise-always">Always</label>
+           </div>
+</div>
 
             <button type="submit" class="submit-button">Submit</button>
         </form>
@@ -95,9 +110,11 @@
         // Handle quiz submission
         document.getElementById('quiz-form').onsubmit = function(event) {
             event.preventDefault();
-
+            // Retrieve the value from the new question about exercise habits
+            var exerciseHabits = document.querySelector('input[name="question3"]:checked').value;
+       
             // Need to implement grading system
-
+            alert("Quiz submitted with new question answer: " + exerciseHabits);
             alert("Quiz submitted!");
         };
     </script>
