@@ -1,13 +1,13 @@
-const htmlFile = '../src/quiz.html'
+const quizFile = '../src/quiz.html';
 const { expect } = require('chai');
 const chai = require('chai');
 const { JSDOM } = require('jsdom');
 chai.use(require('chai-dom'));
 require('jsdom-global')();
 
-describe(htmlFile, () => {
+describe(quizFile, () => {
   beforeEach((done) => {
-   JSDOM.fromFile(htmlFile)
+   JSDOM.fromFile(quizFile)
    .then((dom) => {
      global.document = dom.window.document
    })
