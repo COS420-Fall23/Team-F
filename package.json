@@ -1,5 +1,23 @@
 {
+  "name": "team-f",
+  "version": "1.0.0",
+  "description": "https://cos420-fall23.github.io/Team-F/src/index.html # Screenshots of App Running https://docs.google.com/document/d/1XqUsCc6BKcDNJoHsyaiNQoK9yYxTd4dr7PKCGHzAMaM/edit # Team Fantastic Six",
+  "main": "index.html",
+  "directories": {
+    "test": "test",
+    "src": "src"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
-    "@testing-library/dom": "^9.3.3"
+    "chai": "^4.3.10",
+    "chai-dom": "^1.11.0",
+    "jsdom": "22.1.0",
+    "jsdom-global": "3.0.2",
+    "mocha": "^10.2.0"
   }
 }
