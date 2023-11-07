@@ -55,34 +55,34 @@
             <div class="question">
                 <div class="question-header"><How often do you feel anxious or worried></div>
                 <div class="options">
-                    <input type="radio" id = "placeholder" name="question1" value="placeholder">
-                    <label for="placeholder">placeholder</label>
+                    <input type="radio" id = "anxious-never" name="question1" value="Never">
+                    <label for="anxious-never">Never</label>
 
-                    <input type="radio" id = "placeholder" name="question1" value="placeholder">
-                    <label for="placeholder">placeholder</label>
+                    <input type="radio" id = "anxious-rarely" name="question1" value="Rarely">
+                    <label for="anxious-rarely">Rarely</label>
                     
-                    <input type="radio" id = "placeholder" name="question1" value="placeholder">
-                    <label for="placeholder">placeholder</label>
+                    <input type="radio" id = "anxious-sometimes" name="question1" value="Sometimes">
+                    <label for="anxious-sometimes">Sometimes</label>
 
-                    <input type="radio" id = "placeholder" name="question1" value="placeholder">
-                    <label for="placeholder">placeholder</label>
+                    <input type="radio" id = "anxious-often" name="question1" value="Often">
+                    <label for="anxious-often">Often</label>
                 </div>
             </div>
             
             <div class="question">
                 <div class="question-header"><How would you describe your sleep habits?></div>
                 <div class="options">
-                    <input type="radio" id = "placeholder" name="question2" value="placeholder">
-                    <label for="placeholder">placeholder</label>
+                    <input type="radio" id = "sleep-poor" name="question2" value="Poor">
+                    <label for="sleep-poor">placeholder</label>
 
-                    <input type="radio" id = "placeholder" name="question2" value="placeholder">
-                    <label for="placeholder">placeholder</label>
+                    <input type="radio" id = "sleep-fair" name="question2" value="Fair">
+                    <label for="sleep-fair">placeholder</label>
 
-                    <input type="radio" id = "placeholder" name="question2" value="placeholder">
-                    <label for="placeholder">placeholder</label>
+                    <input type="radio" id = "sleep-good" name="question2" value="Good">
+                    <label for="sleep-good">placeholder</label>
 
-                    <input type="radio" id = "placeholder" name="question2" value="placeholder">
-                    <label for="placeholder">placeholder</label>
+                    <input type="radio" id = "sleep-excellent" name="question2" value="Excellent">
+                    <label for="sleep-excellent">placeholder</label>
                 </div>
             </div>
             <div class="question">
@@ -110,7 +110,9 @@
         // Handle quiz submission
         document.getElementById('quiz-form').onsubmit = function(event) {
             event.preventDefault();
+            var anxietyLevel = document.querySelector('input[name="question1"]:checked').value;
             // Retrieve the value from the new question about exercise habits
+            var sleepQuality = document.querySelector('input[name="question2"]:checked').value;
             var exerciseHabits = document.querySelector('input[name="question3"]:checked').value;
        
             // Need to implement grading system
