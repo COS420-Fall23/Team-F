@@ -28,3 +28,8 @@ Login template used from: https://github.com/nauvalazhar/bootstrap-4-login-page
 
 # Figma UI Mockup
 Figma File: https://www.figma.com/file/MmOYN3FBWv9L6Zu481Ym33/NMD442-Team-F-Deliverable-1-UI-Mockup?type=design&node-id=0-1&mode=design
+
+# Install and run tests
+```npm install```
+
+```npm test```
