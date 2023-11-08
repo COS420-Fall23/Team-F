@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counselors at Universities in Maine</title>
+    <style>
+        /* CSS styles- feel free to edit*/
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .counselor {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            display: none; /* Hide counselors by default */
+        }
+
+        button {
+            display: inline-block;
+            margin-right: 10px;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button.active {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Counselors at Universities in Maine</h1>
+    </header>
+    <div class="container">
+        <button id="btnUniversityA">Counselors at University A</button>
+        <button id="btnUniversityB">Counselors at University B</button>
+        
+        <!-- Counselors for University A -->
+        <div class="counselor" data-university="univ_a">
+            <h2>Counselor Name 1</h2>
+            <p><strong>Bio:</strong> This is the bio for Counselor 1 at University A. Replace this text with the counselor's bio.</p>
+            <p><strong>Availability:</strong> [Add Availability Here]</p>
+        </div>
+        <div class="counselor" data-university="univ_a">
+            <h2>Counselor Name 2</h2>
+            <p><strong>Bio:</strong> This is the bio for Counselor 2 at University A. Replace this text with the counselor's bio.</p>
+            <p><strong>Availability:</strong> [Add Availability Here]</p>
+        </div>
+        <div class="counselor" data-university="univ_a">
+            <h2>Counselor Name 3</h2>
+            <p><strong>Bio:</strong> This is the bio for Counselor 3 at University A. Replace this text with the counselor's bio.</p>
+            <p><strong>Availability:</strong> [Add Availability Here]</p>
+        </div>
+
+        <!-- Counselors for University B -->
+        <div class="counselor" data-university="univ_b">
+            <h2>Counselor Name 4</h2>
+            <p><strong>Bio:</strong> This is the bio for Counselor 4 at University B. Replace this text with the counselor's bio.</p>
+            <p><strong>Availability:</strong> [Add Availability Here]</p>
+        </div>
+        <div class="counselor" data-university="univ_b">
+            <h2>Counselor Name 5</h2>
+            <p><strong>Bio:</strong> This is the bio for Counselor 5 at University B. Replace this text with the counselor's bio.</p>
+            <p><strong>Availability:</strong> [Add Availability Here]</p>
+        </div>
+        <div class="counselor" data-university="univ_b">
+            <h2>Counselor Name 6</h2>
+            <p><strong>Bio:</strong> This is the bio for Counselor 6 at University B. Replace this text with the counselor's bio.</p>
+            <p><strong>Availability:</strong> [Add Availability Here]</p>
+        </div>
+    </div>
+    <script>
+        const btnUniversityA = document.getElementById("btnUniversityA");
+        const btnUniversityB = document.getElementById("btnUniversityB");
+        const counselors = document.querySelectorAll(".counselor");
+
+        btnUniversityA.addEventListener("click", function () {
+            displayCounselors('univ_a');
+        });
+
+        btnUniversityB.addEventListener("click", function () {
+            displayCounselors('univ_b');
+        });
+
+        function displayCounselors(university) {
+            counselors.forEach(counselor => {
+                if (counselor.getAttribute("data-university") === university) {
+                    counselor.style.display = "block";
+                } else {
+                    counselor.style.display = "none";
+                }
+            });
+            // Update button active state
+            btnUniversityA.classList.toggle("active", university === 'univ_a');
+            btnUniversityB.classList.toggle("active", university === 'univ_b');
+        }
+    </script>
+</body>
+</html>
