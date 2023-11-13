@@ -29,6 +29,11 @@ describe('src/counselor.html', () => {
             let element = document.querySelector('.container').querySelector('.counselor').querySelector('h2')
             expect(element).to.have.text("John Doe")
         })
+        it("Counselor has availability", () => {
+            let element = document.querySelector('.container').querySelectorAll('p').item(1)
+            expect(element).to.have.text("Availability: [Add Availability Here]")
+        })
+        
     })
 })
 
