@@ -8,7 +8,7 @@ Problem Area: Designing and having hope for your future in a changing word
 
 # Team Roles
 
-PM: Zachary E Hamilton
+PM: Zachary Hamilton
 
 Designers: Aayush Manandhar, Sam Porter, Mikey Wilard
 
