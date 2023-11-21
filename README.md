@@ -43,11 +43,14 @@ Run tests:
 
 # Run the application
 ## Install these packages
-npm install firebase <br>
-npm install cors
+```npm install  http-server``` <br>
+```npm install firebase ``` <br>
+```npm install cors```
 
 ## Once theses packages have been installed go to directory that has server.js
 ## RUN
-<b>node server.js</b>
+```node server.js```
 
-This will redirect to index.html (registration page). To check if it is registering new user, go to chrome develover tools and check console. It will give a promt "user created"
+This will redirect to index.html (registration page) using localhost:3000. You can register new user and after registration, it will redirect you to home.html.
+If you have already registered, you can go to login page and put your login credintials. If your user id and password is registered, it will login to the home page else
+give you an error messsage.
