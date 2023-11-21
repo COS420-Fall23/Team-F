@@ -32,20 +32,21 @@ Figma File: https://www.figma.com/file/MmOYN3FBWv9L6Zu481Ym33/NMD442-Team-F-Deli
 # Setup, run, and test instructions
 Run all commands from the root directory
 
-# Install dependencies:
+## Install dependencies:
 
 ```npm install```
 
 
-# Run the application
-## Once dependencies have been installed go to directory that has server.js
-## RUN
+## Run the application
+Once dependencies have been installed go to directory that has server.js
+
 ```node server.js```
-
-# Run tests:
-
-```npm test```
 
 This will redirect to index.html (registration page) using localhost:3000. You can register new user and after registration, it will redirect you to home.html.
 If you have already registered, you can go to login page and put your login credintials. If your user id and password is registered, it will login to the home page else
 give you an error messsage.
+
+## Run tests:
+
+```npm test```
+
