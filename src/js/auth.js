@@ -30,12 +30,13 @@ document.addEventListener('DOMContentLoaded', function() {
       createUserWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
           // Registered successfully
+          window.alert("successfully created user")
           console.log('User created:', userCredential.user);
-          // Additional logic after successful registration
+          window.location.href = '../home.html';
         })
         .catch((error) => {
+          window.alert("invalid information")
           console.error('Registration error:', error);
-          // Handle errors here
         });
     });
   }
