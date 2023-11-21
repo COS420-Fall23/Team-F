@@ -21,11 +21,12 @@ document.addEventListener('DOMContentLoaded', function() {
         .then((userCredential) => {
           // Logged in successfully
           console.log('User logged in:', userCredential.user);
-          // Redirect to another page or show login success message
+          window.alert("logged in")
+          window.location.href = '../home.html';
         })
         .catch((error) => {
+          window.alert("incorrect password or no user account")
           console.error('Login error:', error);
-          // Handle errors here (e.g., user not found, wrong password)
         });
     });
   }
