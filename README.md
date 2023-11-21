@@ -40,3 +40,14 @@ Install dependencies:
 Run tests:
 
 ```npm test```
+
+# Run the application
+## Install these packages
+npm install firebase <br>
+npm install cors
+
+## Once theses packages have been installed go to directory that has server.js
+## RUN
+<b>node server.js</b>
+
+This will redirect to index.html (registration page). To check if it is registering new user, go to chrome develover tools and check console. It will give a promt "user created"
