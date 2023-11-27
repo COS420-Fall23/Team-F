@@ -2,13 +2,16 @@
   "name": "team-f",
   "version": "1.0.0",
   "description": "https://cos420-fall23.github.io/Team-F/src/index.html # Screenshots of App Running https://docs.google.com/document/d/1XqUsCc6BKcDNJoHsyaiNQoK9yYxTd4dr7PKCGHzAMaM/edit # Team Fantastic Six",
-  "main": "index.html",
+  "main": "App.js",
   "directories": {
     "test": "test",
     "src": "src"
   },
   "scripts": {
-    "test": "mocha"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "keywords": [],
   "author": "",
@@ -24,6 +27,21 @@
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "firebase": "^10.6.0",
-    "http-server": "^14.1.1"
+    "http-server": "^14.1.1",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.20.0",
+    "react-scripts": "^5.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
