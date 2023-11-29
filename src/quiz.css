@@ -1,0 +1,121 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.quiz-container {
+    background-color: #EEFFEE;
+    ;
+    width: 390px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.quiz-container h1 {
+    color: #000;
+    font-size: 32px;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+
+.quiz-container p {
+    text-align: left;
+    margin-bottom: 24px;
+    font-size: 18px;
+    color: #666;
+    margin-left: 20px;
+}
+
+
+.quiz-container label {
+    display: block;
+    background-color: #EEFFEE;
+    border-radius: 20px;
+    padding: 2px 10px;
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: #333;
+}
+
+
+.quiz-container select,
+.quiz-container input {
+    width: 100%;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 12px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #f7f7f7;
+    cursor: pointer;
+}
+
+
+.quiz-container select::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+
+.quiz-container .back-button,
+.quiz-container .continue-button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block;
+    margin-top: 12px;
+    width: calc(50% - 8px);
+}
+
+
+.footer-container .back-button {
+    background-color: #ddd;
+    color: #333;
+    padding:10px 40px 10px 40px;
+}
+
+
+.footer-container .continue-button {
+    background-color: #ddd;
+    color: #333;
+    margin-left: 16px;
+    text-align: center;
+    padding:10px 40px 10px 30px;
+}
+
+
+.quiz-container .back-button:hover,
+.quiz-container .continue-button:hover {
+    opacity: 0.9;
+}
+
+.quiz-container select option[value=""] {
+    color: #999;
+}
+
+.footer-container {
+    background-color: #323C32;
+    border-radius: 0 0 10px 10px;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+    margin: 20px -20px -20px;
+}

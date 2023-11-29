@@ -1,0 +1,377 @@
+/***    General     ***/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "arial", sans-serif
+}
+
+body {
+    margin: 0 auto
+}
+
+.m-5-auto {
+    margin: 5rem auto
+}
+
+.primary-button {
+    margin-top: 5rem;
+    margin-right: 1rem;
+    padding: .6rem;
+    width: 10rem;
+    background: #222;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: all .5s;
+    cursor: pointer;
+    text-transform: capitalize
+}
+
+/***    Landing Page     ***/
+.main-title,
+.main-para {
+    color: #f1f1f1
+}
+
+.main-title {
+    padding-top: 10rem;
+    font-size: 5rem;
+    font-family: 'arial';
+    text-transform: uppercase
+}
+
+.main-para {
+    font-size: 2.5rem;
+    text-Transform: capitalize
+}
+
+#reg_btn span {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#reg_btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#reg_btn:hover span {
+  padding-right: 25px;
+}
+
+#reg_btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/***    Login Page     ***/
+h2 {
+    font-weight: 300
+}
+
+form {
+    display: inline-block;
+    background: #f3f3f3;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    padding: 2rem;
+    margin: 2rem 0 1rem 0
+}
+
+form label {
+    float: left;
+    font-size: .9rem;
+    margin: 0;
+    padding: 0
+}
+
+.right-label {
+    float: right;
+    cursor: pointer
+}
+
+input {
+    width: 15rem;
+    padding: .3rem;
+    border-radius: 5px;
+    outline: none;
+    border: none
+}
+
+#sub_btn {
+    display: block;
+    width: 100%;
+    padding: .3rem;
+    border: none;
+    background: #222;
+    color: #fff;
+    border-radius: 3px;
+}
+
+#sub_btn:hover {
+    background: #333;
+    transition: all .5s
+}
+
+footer p {
+    margin: 0;
+    font-size: .9rem
+}
+
+/***    Register Page     ***/
+#checkbox {
+    width: 1rem
+}
+
+form span {
+    font-size: .8rem
+}
+
+#reset_pass_lbl {
+    float: left
+}
+
+.home-page-title {
+    color: #222
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.landing-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+body {
+    justify-content: center;
+    font-family: 'Arial', sans-serif;
+    align-items: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+    color: #EEFFEE;
+    background-color: #EEFFEE;
+    width: 390px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.login-card h1 {
+    color: #EEFFEE;
+    align-items: center;
+    background-color: #EEFFEE;
+    color: #000;
+    font-size: 50px;
+    text-align: ceter;
+    margin-bottom: 25px;
+    margin-left: 0px;
+    margin-top: 30px;
+}
+
+.login-form {
+    align-items: center;
+    background-color: #EEFFEE;
+    border: 0px;
+}
+
+.login-form input {
+    width: calc(100% - 40px);
+    border: 1px solid #000000;
+    
+    border-radius: 20px;
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 12px;
+    background-color: #f7f7f7;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.login-form .forgot-link {
+    text-align: left;
+    font-size: 18px;
+    color: #666;
+    display: block;
+    margin-left: 20px;
+    margin-bottom: 24px;
+    text-decoration: none;
+}
+
+.login-form .continue-button {
+    background-color: #74DFBF;
+    color: #333;
+    padding: 12px 20px;
+    border: solid;
+    border-color: #4c947e;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 12px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.login-form .continue-button:hover {
+    opacity: 0.9;
+}
+
+.guest-or-register {
+    background-color: #323C32;
+    border-radius: 0 0 10px 10px;
+    padding: 30px 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px -20px -20px;
+}
+
+.guest-or-register a {
+    color: #ddd;
+    padding: 10px 40px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.guest-or-register a:hover {
+    opacity: 0.9;
+}
+
+
+.resource-list {
+    align-items: center;
+    background-color: #EEFFEE;
+    border: 0px;
+}
+
+
+
+
+
+
+
+.quiz-container .back-button:hover,
+.quiz-container .continue-button:hover {
+    opacity: 0.9;
+}
+
+.quiz-container select option[value=""] {
+    color: #999;
+}
+
+.footer-container .back-button,
+.footer-container .continue-button {
+    width: 50%;
+    padding: 12px 0;
+    margin: 0;
+}
+
+.footer-container {
+    background-color: #323C32;
+    border-radius: 0 0 10px 10px;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: 20px -20px -20px -20px;
+    width: calc(100% + 40px);
+}
+
+.footer-container .back-button,
+.footer-container .continue-button {
+    width: calc(50% - 10px);
+    padding: 10px 20px; 
+    margin: 0; 
+    border: none;
+    background-color: #ddd;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.footer-container .back-button {
+    margin-right: 10px; 
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+.footer-container .continue-button {
+    margin-left: 10px; 
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+
+.help-button {
+    background-color: #74DFBF;
+    color: #333;
+    padding: 12px 20px;
+    border: solid;
+    border-color: #4c947e;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 12px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.resource-button {
+    background-color: #dedede;
+    color: #333;
+    padding: 12px 20px;
+    border: solid;
+    border-color: #3f3f3f;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 12px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}

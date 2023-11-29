@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quiz Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .quiz-container {
+            margin: 0 auto;
+            max-width: 600px;
+        }
+
+        .question {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .question-header {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .options label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .submit-button {
+            padding: 10px 20px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .submit-button:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-body">
+        <h1>Self-Assessment Quiz</h1>
+   <!--Quiz question format gotten from ChatGPT (Temporary, subject to change)-->
+        <form id="quiz-form">            
+            <div class="question">
+                <div class="question-header">How often do you feel anxious or worried</div>
+                <div class="options">
+                    <input type="radio" id = "anxious-never" name="question1" value="Never">
+                    <label for="anxious-never">Never</label>
+
+                    <input type="radio" id = "anxious-rarely" name="question1" value="Rarely">
+                    <label for="anxious-rarely">Rarely</label>
+                    
+                    <input type="radio" id = "anxious-sometimes" name="question1" value="Sometimes">
+                    <label for="anxious-sometimes">Sometimes</label>
+
+                    <input type="radio" id = "anxious-often" name="question1" value="Often">
+                    <label for="anxious-often">Often</label>
+                </div>
+            </div>
+            
+            <div class="question">
+                <div class="question-header">How would you describe your sleep habits?</div>
+                <div class="options">
+                    <input type="radio" id = "sleep-poor" name="question2" value="Poor">
+                    <label for="sleep-poor">placeholder</label>
+
+                    <input type="radio" id = "sleep-fair" name="question2" value="Fair">
+                    <label for="sleep-fair">placeholder</label>
+
+                    <input type="radio" id = "sleep-good" name="question2" value="Good">
+                    <label for="sleep-good">placeholder</label>
+
+                    <input type="radio" id = "sleep-excellent" name="question2" value="Excellent">
+                    <label for="sleep-excellent">placeholder</label>
+                </div>
+            </div>
+            <div class="question">
+                <div class="question-header">How often do you exercise in a week?</div>
+                <div class="options">
+                <input type="radio" id="exercise-never" name="question3" value="Never">
+                <label for="exercise-never">Never</label>
+
+                <input type="radio" id="exercise-sometimes" name="question3" value="Sometimes">
+                <label for="exercise-sometimes">Sometimes</label>
+        
+                <input type="radio" id="exercise-often" name="question3" value="Often">
+                <label for="exercise-often">Often</label>
+
+                <input type="radio" id="exercise-always" name="question3" value="Always">
+                <label for="exercise-always">Always</label>
+           </div>
+</div>
+
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        // Handle quiz submission
+        document.getElementById('quiz-form').onsubmit = function(event) {
+            event.preventDefault();
+            var anxietyLevel = document.querySelector('input[name="question1"]:checked').value;
+            // Retrieve the value from the new question about exercise habits
+            var sleepQuality = document.querySelector('input[name="question2"]:checked').value;
+            var exerciseHabits = document.querySelector('input[name="question3"]:checked').value;
+       
+            // Need to implement grading system
+            alert("Quiz submitted with new question answer: " + exerciseHabits);
+            alert("Quiz submitted!");
+        };
+    </script>
+</body>
+</html>
+
