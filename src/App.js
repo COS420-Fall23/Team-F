@@ -7,6 +7,8 @@ import RegisterPage from './components/pages/RegisterPage';
 import ForgetPasswordPage from './components/pages/ForgetPasswordPage';
 import HomePage from './components/pages/HomePage';
 import Counselors from './components/pages/counselor'; // Adjust the path as necessary
+import Quiz from './components/pages/Quiz';
+import Profile from './components/pages/Profile';
 
 import './App.css';
 
@@ -21,6 +23,8 @@ export default function App() {
                     <Route path="/forget-password" element={<ForgetPasswordPage />} />
                     <Route path="/home" element={<HomePage />} />
                     <Route path="/counselors" element={<Counselors />} /> {/* New route for Counselors */}
+                    <Route path="/quiz" element={<Quiz />} />
+                    <Route path="/profile" element={<Profile />} />
                 </Routes>
             </div>
         </Router>
