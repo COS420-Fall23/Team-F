@@ -21,7 +21,8 @@
     "chai-dom": "^1.11.0",
     "jsdom": "22.1.0",
     "jsdom-global": "3.0.2",
-    "mocha": "^10.2.0"
+    "mocha": "^10.2.0",
+    "testing-library": "^0.0.2"
   },
   "dependencies": {
     "cors": "^2.8.5",
