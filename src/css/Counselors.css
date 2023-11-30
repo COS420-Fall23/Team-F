@@ -1,51 +1,90 @@
 
-
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; 
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #333;
+    background-color: #eef4ee; /* Header color */
     color: #fff;
     text-align: center;
-    padding: 20px;
+    padding: 1.25rem; /* Adjusted padding */
 }
 
 .container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
+    max-width: 360px; 
+    margin: 2rem auto; 
+    padding: 1rem; 
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 20px; /* Increased border-radius for rounder edges */
+    overflow: hidden; /* Ensures no content spills out of the border-radius */
 }
 
 h1 {
     color: #333;
+    font-family: 'Arial', sans-serif;
+    font-size: 2rem; 
+    margin-bottom: 1rem; 
 }
 
 .counselor {
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    padding: 10px;
+    margin-bottom: 1rem; 
+    background-color: #EEFFEE; 
+    padding: 1rem; /* Uniform padding */
+    border-radius: 20px; /* Consistent rounded corners */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out; 
+}
+
+.counselor:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Hover effect for depth */
+}
+
+.counselor h2 {
+    margin: 0;
+    color: #333;
+    font-size: 1.5rem; 
+}
+
+.counselor p {
+    color: #333;
+    font-size: 1rem;
 }
 
 button {
-    display: inline-block;
-    margin-right: 10px;
-    padding: 10px;
-    background-color: #333;
-    color: white;
+    padding: 0.6rem 1rem; 
+    background-color: #74DFBF; 
+    color: #333;
     border: none;
+    border-radius: 20px; 
     cursor: pointer;
-}
-button.active {
-    background-color: #555;
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem; /* Standard button text size */
+    transition: background-color 0.3s ease-in-out; 
 }
 
+button.active {
+    background-color: #8CEAD9; 
+}
+
+button:hover {
+    background-color: #66d5b8; /* Darker green on hover for contrast */
+}
 
 .hidden {
-    display: none;
+    display: none; /* Hide elements not in use */
+}
+
+/* If you have section titles, you can style them as follows */
+.section-title {
+    font-size: 1.5rem; /* Slightly larger than the body text */
+    margin: 1rem 0; /* More space around titles */
+    color: #333;
+    font-weight: bold;
 }
