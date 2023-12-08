@@ -4,13 +4,13 @@
   margin: 20px auto;
   border: 1px solid #ddd;
   border-radius: 10px;
-  overflow: hidden;
-  box-sizing: border-box; 
+  overflow: hidden; /* This should clip the children if they are out of the boundary */
+  box-sizing: border-box;
 }
 
 .profile-form {
-  padding: 20px;
-  padding-bottom: 0;
+  padding: 18px;
+  box-sizing: border-box; /* This ensures padding is included in the width */
 }
 
 .update-instruction {
@@ -27,31 +27,25 @@
   display: block;
   color: #323C32;
   margin-bottom: 5px;
-  font-weight: bold; 
+  font-weight: bold;
 }
-
 
 .form-group input,
 .form-group select {
-  width: 100%;
+  width: calc(100% - 20px); 
   padding: 10px;
-  border: 1px solid #000; 
-  border-radius: 20px; 
-  box-sizing: border-box;
+  border: 1px solid #000;
+  border-radius: 20px;
+  box-sizing: border-box; 
 }
 
 .form-actions {
   text-align: center;
-  padding-top: 20px;
-}
-
-.form-actions {
+  padding: 20px 18px;
   background-color: #004225;
   color: white;
-  text-align: center;
-  padding: 20px;
-  margin: 0 -20px;
   border-radius: 0 0 10px 10px;
+  box-sizing: border-box;
 }
 
 .update-btn {
@@ -62,6 +56,8 @@
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  width: auto;
+  display: inline-block;
 }
 
 .update-btn:hover {
