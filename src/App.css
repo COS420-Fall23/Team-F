@@ -490,10 +490,10 @@ body {
     }
   }
   
-  /*** Profile editor css ***/
+  /*** Profile editor/Sign up css ***/
   
   .profile-container {
-      width: 340px;
+      width: 295px;
       background: #EEFFEE;
       margin: 20px auto;
       border: 1px solid #ddd;

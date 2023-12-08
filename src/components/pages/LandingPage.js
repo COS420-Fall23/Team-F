@@ -8,7 +8,9 @@ export default function LandingPage() {
 
     const navigate = useNavigate();
 
-
+    const register = () => {
+        navigate('/register');
+    };
 
     const goToHome = () => {
         navigate('/home');
@@ -32,7 +34,7 @@ export default function LandingPage() {
                 <div className ="footer-container">
                     <div className="navigation-buttons">
                     <button type="button" onClick={goToHome} className="back-button">Continue as Guest</button>
-                        <button type="button"  className="continue-button">Create Account</button>
+                        <button type="button" className="continue-button" onClick={register}>Create Account</button>
                     </div>
                 </div>
             </div>
