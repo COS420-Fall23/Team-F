@@ -58,6 +58,7 @@ const ViewProfile = () => {
       <div className="profile-container">
         <h2>User Profile</h2>
         <div>Name: {profile.name}</div>
+        <div>Position: {profile.position}</div>
         <div>Birthday: {profile.birthday}</div>
         <div>Gender: {profile.gender}</div>
         <div>University: {profile.university}</div>

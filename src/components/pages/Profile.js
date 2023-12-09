@@ -100,6 +100,14 @@ const Profile = () => {
             </select>
           </div>
           <div className="form-group">
+            <label htmlFor="position">Position</label>
+            <select id="position" name="position" value={profile.position} onChange={handleChange}>
+              <option value="Student">Student</option>
+              <option value="Counselor">Counselor</option>
+              <option value="User">User</option>
+            </select>
+          </div>
+          <div className="form-group">
             <label htmlFor="university">University of study</label>
             <input type="text" id="university" name="university" value={profile.university} onChange={handleChange} />
           </div>
