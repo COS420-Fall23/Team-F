@@ -9,6 +9,7 @@ import HomePage from './components/pages/HomePage';
 import Counselors from './components/pages/counselor'; // Adjust the path as necessary
 import Quiz from './components/pages/Quiz';
 import Profile from './components/pages/Profile';
+import ViewProfile from './components/pages/ProfileView';
 
 import './App.css';
 
@@ -25,6 +26,7 @@ export default function App() {
                     <Route path="/counselors" element={<Counselors />} /> {/* New route for Counselors */}
                     <Route path="/quiz" element={<Quiz />} />
                     <Route path="/profile" element={<Profile />} />
+                    <Route path="/view-profile" element={<ViewProfile />} />
                 </Routes>
             </div>
         </Router>

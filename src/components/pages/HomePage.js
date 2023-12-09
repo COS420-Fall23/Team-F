@@ -13,15 +13,27 @@ export default function LandingPage() {
     const navigateToProfile = () => {
         navigate('/Profile');
     };
+    
+    const navigateToViewProfile = () => {
+        navigate('/view-profile');
+    };
 
     return (
         <div className="landing-page">
             <div className="login-card">
-                <h1 className="title">Home</h1>
                 
-                <button type="button" className="profile-button" onClick={navigateToProfile}>
-                    PFP
+                <h1 className="title">Home</h1>
+                <div className="button-container">
+                <button type="button"  onClick={navigateToProfile}>
+                    Update Profile
                 </button>
+                </div>
+
+                <div className="button-container">
+                <button type="button"  onClick={navigateToViewProfile}>
+                    View Profile
+                </button>
+                </div>
 
                 <button type="button" className="help-button">Help me find what I need</button>
 
