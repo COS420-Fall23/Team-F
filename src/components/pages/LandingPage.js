@@ -36,6 +36,9 @@ export default function LandingPage() {
             .then((userCredential) => {
                 // Registration successful
                 window.alert("Successfully registered")
+                const userId = userCredential.user.uid;
+                // Save the user ID in sessionStorage
+                sessionStorage.setItem('userId', userId);
                 navigate('/home'); // Navigate to home or another page
             })
             .catch((error) => {
@@ -50,6 +53,10 @@ export default function LandingPage() {
             .then((userCredential) => {
                 // Login successful
                 window.alert("User logged in")
+                window.alert("Successfully registered")
+                const userId = userCredential.user.uid;
+                // Save the user ID in sessionStorage
+                sessionStorage.setItem('userId', userId);
                 navigate('/home'); // Navigate to home or another page
             })
             .catch((error) => {

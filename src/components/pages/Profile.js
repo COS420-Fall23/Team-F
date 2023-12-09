@@ -1,5 +1,26 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../../App.css'
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
+import { getFirestore } from 'https://www.gstatic.com/firebasejs/10.6.0/firebase-firestore.js';
+import { collection, addDoc } from 'https://www.gstatic.com/firebasejs/10.6.0/firebase-firestore.js';
+
+
+// Firebase configuration
+const firebaseConfig = {
+	apiKey: "AIzaSyDkCYhI1QQWQyPL_uS2uOM4Xq5t4ZTfZzg",
+    authDomain: "mental-health-de484.firebaseapp.com",
+    projectId: "mental-health-de484",
+    storageBucket: "mental-health-de484.appspot.com",
+    messagingSenderId: "409320190217",
+    appId: "1:409320190217:web:e93afd53a6cd9913fe23d8",
+    measurementId: "G-M4K8YG2ZJG"
+
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+// Initialize Firestore
+const db = getFirestore(app);
 
 
 const Profile = () => {
@@ -10,15 +31,46 @@ const Profile = () => {
     university: 'University of Maine - Orono (UMO)',
     email: 'john.doe@email.com',
     password: '********'
+
   });
+
+  
+
+  
+  const [userId, setUserId] = useState('');
+
+  useEffect(() => {
+    const savedUserId = getUserID();
+    if (savedUserId) {
+      setUserId(savedUserId);
+      // Optionally, fetch additional profile data here using the userId
+    }
+  }, []);
+
+  const getUserID = () => {
+    return sessionStorage.getItem('userId');
+  }
+  
 
   const handleChange = (e) => {
     setProfile({ ...profile, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    alert('Profile updated!'); // Replace with actual update logic
+  
+    try {
+      // Add the profile data to Firestore
+      const docRef = await addDoc(collection(db, "profiles"), {
+        ...profile,
+        userId: userId 
+      });
+      console.log("Profile added with ID: ", docRef.id);
+      window.alert('Profile updated!');
+    } catch (error) {
+      window.alert("Error adding profile: ", error);
+      alert('Failed to update profile.');
+    }
   };
 
   return (
@@ -31,6 +83,10 @@ const Profile = () => {
           <div className="form-group">
             <label htmlFor="name">Name</label>
             <input type="text" id="name" name="name" value={profile.name} onChange={handleChange} />
+          </div>
+          <div className="form-group">
+            <label htmlFor="name">User ID</label>
+            <input type="text" id="name" name="name" value={userId} onChange={handleChange} />
           </div>
           <div className="form-group">
             <label htmlFor="birthday">Birthday</label>
