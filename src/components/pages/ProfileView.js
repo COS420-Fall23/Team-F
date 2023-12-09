@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../../App.css'
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
-import { getFirestore,doc,getDoc } from 'https://www.gstatic.com/firebasejs/10.6.0/firebase-firestore.js';
+import { getFirestore,doc,getDocs,query, where, orderBy } from 'https://www.gstatic.com/firebasejs/10.6.0/firebase-firestore.js';
 import { collection, addDoc } from 'https://www.gstatic.com/firebasejs/10.6.0/firebase-firestore.js';
 
 
@@ -35,16 +35,20 @@ const ViewProfile = () => {
     }, []);
   
     const fetchUserProfile = async (userId) => {
-      const docRef = doc(db, "profiles", userId);
-      const docSnap = await getDoc(docRef);
-  
-      if (docSnap.exists()) {
-        setProfile(docSnap.data());
+      const q = query(collection(db, "profiles"), where("userId", "==", userId));
+      const querySnapshot = await getDocs(q);
+    
+      if (!querySnapshot.empty) {
+        const totalDocs = querySnapshot.docs.length;
+        const lastDoc = querySnapshot.docs[totalDocs - 1].data(); // Get the last document
+        setProfile(lastDoc);
         window.alert("Profile loaded");
       } else {
-        window.alert("No such Profile")
+        window.alert("No such Profile");
       }
     };
+    
+    
   
     if (!profile) {
       return <div>Loading profile...</div>;

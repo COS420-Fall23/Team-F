@@ -43,7 +43,6 @@ const Profile = () => {
     const savedUserId = getUserID();
     if (savedUserId) {
       setUserId(savedUserId);
-      // Optionally, fetch additional profile data here using the userId
     }
   }, []);
 
