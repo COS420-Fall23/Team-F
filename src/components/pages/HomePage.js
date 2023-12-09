@@ -17,6 +17,9 @@ export default function LandingPage() {
     const navigateToViewProfile = () => {
         navigate('/view-profile');
     };
+    const navigateToViewCounselor = () => {
+        navigate('/view-counselor');
+    };
 
     return (
         <div className="landing-page">
@@ -26,6 +29,12 @@ export default function LandingPage() {
                 <div className="button-container">
                 <button type="button"  onClick={navigateToProfile}>
                     Update Profile
+                </button>
+                </div>
+
+                <div className="button-container">
+                <button type="button"  onClick={navigateToViewCounselor}>
+                    View Counselor
                 </button>
                 </div>
 

@@ -63,6 +63,7 @@ const ViewProfile = () => {
         <div>Gender: {profile.gender}</div>
         <div>University: {profile.university}</div>
         <div>Email: {profile.email}</div>
+        <div>Position: {profile.position}</div>
        
       </div>
     );

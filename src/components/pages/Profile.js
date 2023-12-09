@@ -30,7 +30,8 @@ const Profile = () => {
     gender: 'Male',
     university: 'University of Maine - Orono (UMO)',
     email: 'john.doe@email.com',
-    password: '********'
+    password: '********',
+    position: 'student'
 
   });
 
