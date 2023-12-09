@@ -40,7 +40,7 @@ const ViewCounselor = () => {
       
         if (!querySnapshot.empty) {
           const counselors = querySnapshot.docs.map(doc => doc.data());
-          setProfile(counselors); // Assuming you want to store all counselors in the 'profile' state
+          setProfile(counselors); 
           window.alert("Counselors loaded");
         } else {
           window.alert("No Counselors found");
