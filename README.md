@@ -38,11 +38,11 @@ Run all commands from the root directory
 
 
 ## Run the application
-Once dependencies have been installed go to directory that has server.js
+Once dependencies have been installed RUN:
 
-```node server.js```
+```npm start```
 
-This will redirect to index.html (registration page) using localhost:3000. You can register new user and after registration, it will redirect you to home.html.
+This will redirect to app.js (registration page) using localhost:3000. You can register new user and after registration, it will redirect you to landingpage.js.
 If you have already registered, you can go to login page and put your login credintials. If your user id and password is registered, it will login to the home page else
 give you an error messsage.
 
