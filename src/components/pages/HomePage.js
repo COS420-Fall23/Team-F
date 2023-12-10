@@ -24,29 +24,34 @@ export default function LandingPage() {
     const navigateToViewCounselor = () => {
         navigate('/view-counselor');
     };
+    const navigateToLandingPage = () => {
+        sessionStorage.clear(); // Clear all sessionStorage data
+        window.alert("Clearning Session Data. Logout Successful")
+        navigate('/');
+    };
 
     return (
         <div className="landing-page">
             <div className="login-card">
                 
                 <h1 className="title">Home</h1>
-                <div className="button-container">
-                <button type="button"  onClick={navigateToProfile}>
+                
+                <button type="button" className="resource-button" onClick={navigateToProfile}>
                     Update Profile
                 </button>
-                </div>
+                
 
-                <div className="button-container">
-                <button type="button"  onClick={navigateToViewCounselor}>
+                
+                <button type="button" className="resource-button" onClick={navigateToViewCounselor}>
                     View Counselor
                 </button>
-                </div>
+                
 
-                <div className="button-container">
-                <button type="button"  onClick={navigateToViewProfile}>
+               
+                <button type="button" className="resource-button" onClick={navigateToViewProfile}>
                     View Profile
                 </button>
-                </div>
+              
 
                 <button type="button" className="help-button" onClick={navigateToResources}>Resources</button>
 
@@ -57,6 +62,11 @@ export default function LandingPage() {
                 <button type="button" className="resource-button" onClick={navigateToCounselors}>Local Counselors</button>
 
                 <button type="button" className="resource-button">Continue</button>
+                <div className="button-container">
+                <button type="button"  onClick={navigateToLandingPage}>
+                    Log Out
+                </button>
+                </div>
                 
                 <div className="footer-container">
                     <div className="navigation-buttons">
