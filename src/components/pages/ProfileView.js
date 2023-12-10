@@ -59,6 +59,7 @@ const ViewProfile = () => {
         <h2>User Profile</h2>
         <div>Name: {profile.name}</div>
         <div>Position: {profile.position}</div>
+        <div>Bio: {profile.bio}</div>
         <div>Birthday: {profile.birthday}</div>
         <div>Gender: {profile.gender}</div>
         <div>University: {profile.university}</div>
