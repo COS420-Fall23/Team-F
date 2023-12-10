@@ -24,12 +24,13 @@ const db = getFirestore(app);
 
 const ViewCounselor = () => {
     const [profile, setProfile] = useState(null);
+    const [selectedCounselor, setSelectedCounselor] = useState(null);
     const [userId, setUserId] = useState('');
   
     useEffect(() => {
       const savedUserId = sessionStorage.getItem('userId');
       if (savedUserId) {
-        setUserId(savedUserId);
+        setUserId(savedUserId); 
         fetchUserProfile(savedUserId);
       }
     }, []);
@@ -47,32 +48,39 @@ const ViewCounselor = () => {
         }
       };
       
-    
+      const handleProfileClick = (counselor) => {
+        setSelectedCounselor(counselor);
+    };
   
       if (!profile || profile.length === 0) {
         return <div>Loading profiles...</div>;
       }
       
       return (
-        <div className="profile-container">
-          <h2>Counselor Profiles</h2>
-          {profile.map((counselor, index) => (
-            <div key={index}>
-              <div>Name: {counselor.name}</div>
-              <div>Position: {counselor.position}</div>
-              <div>Birthday: {counselor.birthday}</div>
-              <div>Gender: {counselor.gender}</div>
-              <div>University: {counselor.university}</div>
-              <div>Email: {counselor.email}</div>
-              
-            </div>
-          ))}
+          <div className="profile-container">
+              <h2>Counselor Profiles</h2>
+              <div className="counselor-list">
+                  {profile.map((counselor, index) => (
+                      <div key={index} className="counselor-name" onClick={() => handleProfileClick(counselor)}>
+                          {counselor.name}
+                      </div>
+                  ))}
+              </div>
+
+            {selectedCounselor && (
+                <div className="counselor-details">
+                    <h3>{selectedCounselor.name}</h3>
+                    <p>Position: {selectedCounselor.position}</p>
+                    <p>Bio: {selectedCounselor.bio}</p>
+                    <p>Birthday: {selectedCounselor.birthday}</p>
+                    <p>Gender: {selectedCounselor.gender}</p>
+                    <p>University: {selectedCounselor.university}</p>
+                    <p>Email: {selectedCounselor.email}</p>
+                </div>
+            )}
         </div>
-      );
-      
-  
- 
-  };
+    );
+};
   
   export default ViewCounselor;
   

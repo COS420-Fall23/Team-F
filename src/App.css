@@ -568,3 +568,36 @@ body {
     .update-btn:hover {
       background-color: #323C32;
     }
+
+    /* CounselorView */
+
+
+    .profile-container {
+      display: block;
+      padding: 10px;
+    }
+
+    .counselor-list {
+      margin-bottom: 20px;
+    }
+
+    .counselor-name {
+      cursor: pointer;
+      margin-bottom: 10px;
+      padding: 10px;
+      background-color: #74DFBF;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .counselor-name:hover {
+      background-color: #42826e;
+    }
+
+    .counselor-details {
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+
+
