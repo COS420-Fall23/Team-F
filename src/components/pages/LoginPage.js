@@ -9,14 +9,14 @@ export default function SignInPage() {
             <h2>Sign in to us</h2>
             <form action="/home">
                 <p>
-                    <label>Username or email address</label><br/>
-                    <input type="text" name="first_name" required />
+                    <label htmlFor="username">Username or email address</label><br/>
+                    <input type="text" id="username" name="first_name" required />
                 </p>
                 <p>
-                    <label>Password</label>
+                    <label htmlFor="password">Password</label>
                     <Link to="/forget-password"><label className="right-label">Forget password?</label></Link>
                     <br/>
-                    <input type="password" name="password" required />
+                    <input type="password" id="password" name="password" required />
                 </p>
                 <p>
                     <button id="sub_btn" type="submit">Login</button>

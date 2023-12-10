@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, fireEvent, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import Profile from './Profile'; 
+import Profile from './components/pages/Profile.js'; 
 
 describe('Profile Component', () => {
   test('renders the profile form and updates state on input change', () => {

@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from '@testing-library/react';
-import Quiz from './Quiz';
+import Quiz from './components/pages/Quiz.js';
 
 test('renders Quiz component without crashing', () => {
   render(<Quiz />);
