@@ -71,6 +71,9 @@ export default function LandingPage() {
         navigate('/home');
     };
 
+    const goToPrivacyPolicy = () => {
+        navigate('/view-privacy');
+    };
     return (
         <div className="landing-page">
             <div className="login-card">
@@ -102,7 +105,13 @@ export default function LandingPage() {
                     <button type="button" onClick={goToHome} className="back-button">Continue as Guest</button>
                         
                     </div>
+                    <div className="navigation-buttons">
+                    <button type="button" onClick={goToPrivacyPolicy} className="back-button">Privacy and Confidentiality Policy</button>
+                        
+                    </div>
                 </div>
+
+              
             </div>
             
         </div>

@@ -12,6 +12,7 @@ import Profile from './components/pages/Profile';
 import ViewProfile from './components/pages/ProfileView';
 import ViewCounselor from './components/pages/CounselorView';
 import ViewResources from './components/pages/ResourcePage';
+import ViewPrivacy from './components/pages/PrivacyPolicy';
 
 
 
@@ -33,6 +34,8 @@ export default function App() {
                     <Route path="/view-profile" element={<ViewProfile />} />
                     <Route path="/view-counselor" element={<ViewCounselor />} />
                     <Route path="/resourcepage" element={<ViewResources />} />
+                    <Route path="/view-privacy" element={<ViewPrivacy />} />
+
                 </Routes>
             </div>
         </Router>
