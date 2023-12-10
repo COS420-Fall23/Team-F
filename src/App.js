@@ -6,11 +6,13 @@ import LoginPage from './components/pages/LoginPage';
 import RegisterPage from './components/pages/RegisterPage';
 import ForgetPasswordPage from './components/pages/ForgetPasswordPage';
 import HomePage from './components/pages/HomePage';
-import Counselors from './components/pages/counselor'; // Adjust the path as necessary
+import Counselors from './components/pages/counselor';
 import Quiz from './components/pages/Quiz';
 import Profile from './components/pages/Profile';
 import ViewProfile from './components/pages/ProfileView';
 import ViewCounselor from './components/pages/CounselorView';
+import ViewResources from './components/pages/ResourcePage';
+
 
 
 import './App.css';
@@ -30,6 +32,7 @@ export default function App() {
                     <Route path="/profile" element={<Profile />} />
                     <Route path="/view-profile" element={<ViewProfile />} />
                     <Route path="/view-counselor" element={<ViewCounselor />} />
+                    <Route path="/resourcepage" element={<ViewResources />} />
                 </Routes>
             </div>
         </Router>

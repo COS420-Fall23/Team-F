@@ -10,6 +10,10 @@ export default function LandingPage() {
         navigate('/counselors');
     };
 
+    const navigateToResources = () => {
+        navigate('/resourcepage');
+    };
+
     const navigateToProfile = () => {
         navigate('/Profile');
     };
@@ -44,7 +48,7 @@ export default function LandingPage() {
                 </button>
                 </div>
 
-                <button type="button" className="help-button">Help me find what I need</button>
+                <button type="button" className="help-button" onClick={navigateToResources}>Resources</button>
 
                 <Link to="/quiz" className="full-width-link">
                     <button type="button" className="resource-button">Self-Assessment</button>
