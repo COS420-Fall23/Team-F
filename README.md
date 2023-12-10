@@ -23,9 +23,6 @@ Mental health has been one of the less discussed topics in the university where 
 UMaine has a dedicated counseling center webpage that provides information regarding various mental health resources available to the UMaine community. However, It may be overwhelming for someone who has never had mental health therapy to navigate to the right person to talk with. Additionally, as a college student with limited free time, it can be difficult to find time to meet with counselors. Students are currently unable to independently assess their mental health. A student that struggles with properly assessing their mental health will be less likely to know when an appointment is necessary, and less likely to receive needed treatment.
 
 
-# Reference and code reuse
-Login template used from: https://github.com/nauvalazhar/bootstrap-4-login-page
-
 # Figma UI Mockup
 Figma File: https://www.figma.com/file/MmOYN3FBWv9L6Zu481Ym33/NMD442-Team-F-Deliverable-1-UI-Mockup?type=design&node-id=0-1&mode=design
 
@@ -42,10 +39,8 @@ Once dependencies have been installed RUN:
 
 ```npm start```
 
-This will redirect to app.js (registration page) using localhost:3000. You can register new user and after registration, it will redirect you to landingpage.js.
-If you have already registered, you can go to login page and put your login credintials. If your user id and password is registered, it will login to the home page else
-give you an error messsage.
-
+This will redirect to registration page using localhost:3000. You can register new user using email and password. After registration, it will redirect you to the home page where you can update and view your profile. It also shows all the available counselors and allow you to take mental health screening using a set of questions.
+If you are already a registered user, you can directly login using your login credintials. This application saves your userID while you login to store and save any changes you make in the application. Once you logout from the application, the user sessions are cleared and you can login as a new user.
 ## Run tests:
 
 ```npm test```
