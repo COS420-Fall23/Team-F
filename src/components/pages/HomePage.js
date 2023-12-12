@@ -69,9 +69,8 @@ export default function LandingPage() {
                 </div>
                 
                 <div className="footer-container">
-                    <div className="navigation-buttons">
-                        <button type="button" className="back-button"></button>
-                        <button type="submit" className="continue-button"></button>
+                <div className="navigation-buttons">
+                        <button onClick={() =>window.history.back()} type="button" className="back-button">Back</button>
                     </div>
                 </div>
             </div>        

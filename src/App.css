@@ -346,6 +346,7 @@ body {
     margin-right: 10px; 
     border-radius: 20px;
     font-size: 1rem;
+    width: 100%;
 }
 
 .footer-container .continue-button {
